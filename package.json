@@ -1,0 +1,27 @@
+{
+  "name": "api-express",
+  "version": "1.0.0",
+  "description": "Iniciando desenvolvimento de API'S utilizando Node",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patrikdev/api-express.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/patrikdev/api-express/issues"
+  },
+  "homepage": "https://github.com/patrikdev/api-express#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.3"
+  }
+}
