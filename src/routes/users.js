@@ -4,14 +4,14 @@ const router = express.Router();
 // RETORNA TODOS OS USUARIOS
 router.get("/", (req, res, next) => {
   res.status(200).send({
-    message: "Usando o GET dentro da rota de usuarios",
+    message: "Retorna todos os Usuários",
   });
 });
 
 // INSERE UM USUARIO
 router.post("/", (req, res, next) => {
   res.status(201).send({
-    message: "Usando o POST dentro da rota de usuarios",
+    message: "Insere um Usuário",
   });
 });
 
@@ -21,7 +21,7 @@ router.get("/:id_user", (req, res, next) => {
 
   if (id == "especifico") {
     res.status(200).send({
-      message: "Usando o GET de um ID de usuario epecífico",
+      message: "Detalhes do Usuário",
       id: id,
     });
   } else {
@@ -31,15 +31,17 @@ router.get("/:id_user", (req, res, next) => {
   }
 });
 
+// ALTERA UM USUARIO
 router.patch("/", (req, res, next) => {
   res.status(201).send({
-    message: "Usando o PATCH dentro da roda de usuarios",
+    message: "Detalhes do Usuário",
   });
 });
 
+//DELETA UM USUARIO
 router.delete("/", (req, res, next) => {
   res.status(201).send({
-    message: "Usando o DELETE dentro da rota de usuarios",
+    message: "Usuario Deletado",
   });
 });
 
